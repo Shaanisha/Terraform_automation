@@ -1,9 +1,8 @@
 terraform {
   backend "s3" {
-    encrypt        = false
-    bucket = "mydev-tf-state-bucket-project-terraform-list-3"
+    bucket = "s3-list-1"
     key = "main"
-    region = "ap-south-1"
-    dynamodb_table = "my-dynamodb-table"
+    region = "us-east-1"
+    dynamodb_table = "table-1"
   }
 }
